@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        .formulario1{
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <section class="row">     
+            <form action="#" class="formulario1 col s12 ">
+                <h4 align="center" style="color:darkcyan" >Materialize</h4> 
+                    
+                <h5 class="pink darken-2  center" style="color:white" >Formulario
+                </h5>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Ejem: Monica" id="Nombres" type="text" class="validate">
+                        <label for="Nombres">Nombres</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="Apellidos" type="text" class="validate">
+                        <label for="Apellidos">Apellidos</label>
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" placeholder="Ejem: micorreo@hotmail.com">
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="formato email incorrecto" data-success="formato email correcto">Helper text</span>
+                   </div>
+                   <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="telephone" type="text" class="validate" placeholder="Ejem: 999-888-777">
+                        <label for="telephone">Telefono</label>                    
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col s4">
+                        <label for="genero">Género</label>
+                        <div class="row"></div>
+                        <div class="row">
+                           <div class="col s6">
+                              <label>
+                                 <input id="genero" class="with-gap" name="genero" type="radio" checked />
+                                 <span>Femenino</span>
+                              </label>
+                            </div>
+                            <div class="col s6"> 
+                              <label>
+                                 <input id="GENERO" class="with-gap" name="genero" type="radio" checked />
+                                 <span>Masculino</span>
+                              </label>
+                            </div> 
+                         </div>
+                    </div>                  
+                    <div class="col s4">
+                        <label for="genero">Edad</label>
+                        
+                              <p class="range-field">
+                               <input type="range" id="test5" min="0" max="100" />
+                              </p>
+                        
+                    </div>
+                    <div class="col s4">
+                        <label for="situacion">Situacion</label>
+                         <div class="row"></div>
+                         <!-- Switch -->
+                            <div class="switch">
+                                <label>
+                                Desempleado
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                                Empleado
+                                </label>
+                            </div>
+                    </div>    
+                </div>
+
+                <div class="row ">                 
+                        <div class="input-field col s6 ">
+                          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                          <label for="textarea2">Carta de Presentación</label>
+                        </div>
+                        <div class="col s6 ">
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                <span>CV</span>
+                                <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Curriculum Vitae">
+                                </div>
+                          </div>
+                        </div>              
+                </div>
+
+                <div class="row ">
+                    <div class="col s12 center ">
+                      <label>
+                        <input type="checkbox"  />
+                        <span>  <a href="https://www.google.com">He leído y acepto los términos y condiciones</a></span>                         
+                      </label>
+                    </div> 
+                </div>
+                <div class="row">   
+                    <div class="col s12 center">  
+                      <a class="btn waves-effect waves-light btn-small center darkcyan">Enviar</a>
+                    </div>  
+                </div>
+            </form>
+        </section>
+    </main>
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+        
+   </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Choreographer-JS | Example Two</title>
+  </head>
+
+  <body>
+    <style>
+       h3{
+
+          text-align: center;
+        }
+      p {
+        position: fixed;
+        top: 100px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-family: 'Arial', sans-serif;
+        color: cyan;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+      }
+
+      #box {
+        margin: 0 0;
+        width: 100vw;
+        height: 100vh;
+        background: crimson;
+        opacity: 0.2;
+      }
+    </style>
+    <h3>Choreographer</h3>
+    <p>Animación basada en el mouse.</p>
+    <div id="box"></div>
+
+    <script src="./choreographer.min.js"></script>
+    <script>
+      var choreographer = new Choreographer({
+        animations: [
+          {
+            range: [-1, window.innerWidth],
+            selector: '#box',
+            type: 'scale',
+            style: 'opacity',
+            from: 0.2,
+            to: 1
+          }
+        ]
+      })
+
+      window.addEventListener('mousemove', function(e) {
+        choreographer.runAnimationsAt(e.clientX)
+      })
+    </script>
+  </body>
+</html>
